@@ -18,18 +18,15 @@ Training Academy SQL Database Workshop
     - HAVING
 
     Run the script section by section during the workshop.
-*/
 
+## 1. DDL
 -- ============================================================
 -- 1. CREATE DATABASE
 -- ============================================================
 
 CREATE DATABASE TrainingAcademy;
-GO
 
 USE TrainingAcademy;
-GO
-
 
 -- ============================================================
 -- 2. CREATE STUDENTS TABLE
@@ -41,7 +38,6 @@ CREATE TABLE Students (
     Email VARCHAR(100) UNIQUE,
     BirthDate DATE
 );
-GO
 
 
 -- ============================================================
@@ -53,7 +49,6 @@ CREATE TABLE Instructors (
     FullName VARCHAR(100) NOT NULL,
     Specialization VARCHAR(100)
 );
-GO
 
 
 -- ============================================================
@@ -69,8 +64,6 @@ CREATE TABLE Courses (
     FOREIGN KEY (InstructorID)
         REFERENCES Instructors(InstructorID)
 );
-GO
-
 
 -- ============================================================
 -- 5. CREATE ENROLLMENTS TABLE
@@ -87,8 +80,6 @@ CREATE TABLE Enrollments (
     FOREIGN KEY (CourseID)
         REFERENCES Courses(CourseID)
 );
-GO
-
 
 -- ============================================================
 -- 6. CREATE SESSIONS TABLE
@@ -102,8 +93,6 @@ CREATE TABLE Sessions (
     FOREIGN KEY (CourseID)
         REFERENCES Courses(CourseID)
 );
-GO
-
 
 -- ============================================================
 -- 7. CREATE ATTENDANCE TABLE
@@ -119,9 +108,8 @@ CREATE TABLE Attendance (
     FOREIGN KEY (StudentID)
         REFERENCES Students(StudentID)
 );
-GO
 
-
+## 2. DML
 -- ============================================================
 -- 8. INSERT STUDENTS
 -- ============================================================
@@ -133,8 +121,6 @@ VALUES
     (2, 'Sara Khaled', 'sara@email.com', '2002-08-20'),
     (3, 'Omar Hassan', 'omar@email.com', '2000-11-03'),
     (4, 'Lina Samir', 'lina@email.com', '2003-02-15');
-GO
-
 
 -- ============================================================
 -- 9. INSERT INSTRUCTORS
@@ -145,8 +131,6 @@ INSERT INTO Instructors
 VALUES
     (1, 'Mohammad Ahmad', 'Database Development'),
     (2, 'Sara Omar', 'Web Development');
-GO
-
 
 -- ============================================================
 -- 10. INSERT COURSES
@@ -158,8 +142,6 @@ VALUES
     (1, 'SQL Fundamentals', 120.00, 1),
     (2, 'Web Development', 180.00, 2),
     (3, 'Advanced SQL', 200.00, 1);
-GO
-
 
 -- ============================================================
 -- 11. INSERT ENROLLMENTS
@@ -173,8 +155,6 @@ VALUES
     (3, 3, 1, '2026-09-02'),
     (4, 1, 2, '2026-09-03'),
     (5, 4, 3, '2026-09-04');
-GO
-
 
 -- ============================================================
 -- 12. INSERT SESSIONS
@@ -188,8 +168,6 @@ VALUES
     (3, 1, '2026-09-15', 'JOINs'),
     (4, 2, '2026-09-11', 'HTML Basics'),
     (5, 3, '2026-09-16', 'Advanced Queries');
-GO
-
 
 -- ============================================================
 -- 13. INSERT ATTENDANCE
@@ -207,12 +185,12 @@ VALUES
     (7, 3, 1, 'Present'),
     (8, 3, 2, 'Present'),
     (9, 3, 3, 'Present');
-GO
-
 
 -- ============================================================
 -- 14. SELECT - ALL STUDENTS
 -- ============================================================
+
+## 3. DQL
 
 SELECT *
 FROM Students;
