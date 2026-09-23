@@ -36,23 +36,23 @@ INSERT INTO Attendance (AttendanceID, SessionID, StudentID, Status) VALUES (...)
 SET SQL_SAFE_UPDATES = 1; نرجع نظام الحماية
 ```
 ## Key Queries & Visualizations
-1. List All Students
+1. List all students
 ![Q1 Output](./screenshots/Q1.png)
 
-2. Courses with Fee Greater Than 100
-![Q1 Output](./screenshots/Q2.png)
+2. Courses with fee greater than 100
+![Q2 Output](./screenshots/Q2.png)
 
-3. Student Course Enrollments
-![Q1 Output](./screenshots/Q3.png)
+3. Student course enrollments
+![Q3 Output](./screenshots/Q3.png)
 
-4. Sessions for SQL Courses
-![Q1 Output](./screenshots/Q4.png)
+4. Sessions for SQL courses
+![Q4 Output](./screenshots/Q4.png)
 
-5. Student Attendance Status
-![Q1 Output](./screenshots/Q5.png)
+5. Student attendance status
+![Q5 Output](./screenshots/Q5.png)
 
-6. Present Sessions Count per Student
-![Q1 Output](./screenshots/Q6.png)
+6. Present sessions count per student
+![Q6 Output](./screenshots/Q6.png)
 
-7. Attendance Percentage (Bonus Query)
-![Q1 Output](./screenshots/Q7.png)
+7. Attendance percentage (BonusQuery)
+![Q7 Output](./screenshots/Q7BONUS.png)
