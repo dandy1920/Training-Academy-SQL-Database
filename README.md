@@ -19,18 +19,18 @@ This project presents a comprehensive relational database system designed for a 
 
 ## Technical Notes & DML Operations
 
-During data maintenance and transition from test records to official records in the `Attendance` table, bulk DML operations (`DELETE` and `INSERT`) were utilized.
+During data maintenance and transition from test records (4rows) to official records (9rows) in the `Attendance` table, bulk DML operations (`DELETE` and `INSERT`) were utilized.
 
 ### Handling Safe Update Mode (Error 1175)
-Because MySQL Workbench restricts bulk `DELETE` operations without a reference key in the `WHERE` clause to prevent accidental data loss, Safe Update Mode was handled programmatically using the following snippet:
+Because `MySQL Workbench` restricts bulk `DELETE` operations without a reference key in the `WHERE` clause to prevent accidental data loss, Safe Update Mode was handled programmatically using the following snippet:
 
 ```sql
 -- Disable Safe Updates temporarily
-SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES = 0; حتى نوقف برنامج الحماية من التغييرات مؤقتا
 
 -- Refresh Attendance Table records
-DELETE FROM Attendance;
+DELETE FROM Attendance; نمسح الانسيرت القديم اللي كان اربعة صفوف
 INSERT INTO Attendance (AttendanceID, SessionID, StudentID, Status) VALUES (...);
-
+نضيف الانسيرت الجديد والاصلي لقاعدة البيانات 
 -- Re-enable Safe Updates
-SET SQL_SAFE_UPDATES = 1;
+SET SQL_SAFE_UPDATES = 1; نرجع نظام الحماية
