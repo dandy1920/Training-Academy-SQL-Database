@@ -34,3 +34,7 @@ INSERT INTO Attendance (AttendanceID, SessionID, StudentID, Status) VALUES (...)
 نضيف الانسيرت الجديد والاصلي لقاعدة البيانات 
 -- Re-enable Safe Updates
 SET SQL_SAFE_UPDATES = 1; نرجع نظام الحماية
+```
+## Key Queries & Visualizations
+1. List All Students
+![Q1 Output](./screenshots/Q1.png)
