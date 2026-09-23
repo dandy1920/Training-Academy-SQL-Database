@@ -55,4 +55,4 @@ SET SQL_SAFE_UPDATES = 1; نرجع نظام الحماية
 ![Q6 Output](./screenshots/Q6.png)
 
 7. Attendance percentage (BonusQuery)
-![Q7 Output](./screenshots/Q7BONUS.png)
+![Q7 Output](./screenshots/Q7%20BONUS.png)
