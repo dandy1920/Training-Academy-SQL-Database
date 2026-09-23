@@ -20,7 +20,7 @@ This project presents a comprehensive relational database system designed for a 
 ## Technical Notes & DML Operations
 
 During data maintenance and transition from test records (4rows) to official records (9rows) in the `Attendance` table, bulk DML operations (`DELETE` and `INSERT`) were utilized.
-
+---
 ### Handling Safe Update Mode (Error 1175)
 Because `MySQL Workbench` restricts bulk `DELETE` operations without a reference key in the `WHERE` clause to prevent accidental data loss, Safe Update Mode was handled programmatically using the following snippet:
 
