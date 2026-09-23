@@ -61,15 +61,12 @@ SET SQL_SAFE_UPDATES = 1; نرجع نظام الحماية
 ## Database Architecture & Schema
 ![Database Schema](./Database_Schema.png)
 
-## Database Architecture & Schema
-![Database Schema](./Database_Schema.png)
-
 ## Tools & Environment
 **Database Management System**: MySQL Server / MySQL Workbench
 **Language**: SQL (DDL, DML, DQL)
-**Environment*: Localhost Development Environment
+**Environment**: Localhost Development Environment
 
 ## Author
 **Hudhaifah Muslih Ali**
-- GitHub: [@dandy1920](https://github.com/dandy1920)
-**Email**: dams.gard20@gmail.com
+- **GitHub**: [@dandy1920](https://github.com/dandy1920)
+- **Email**: dams.gard20@gmail.com
