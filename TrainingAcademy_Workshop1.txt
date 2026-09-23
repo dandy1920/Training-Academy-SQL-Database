@@ -1,4 +1,5 @@
-/*
+Training Academy SQL Database Workshop
+
     SQL WORKSHOP - TRAINING ACADEMY
     Microsoft SQL Server / T-SQL
 
