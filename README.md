@@ -1,4 +1,4 @@
-# 🎓 Training Academy - SQL Database Project
+# Training Academy - SQL Database Project
 
 ![SQL](https://img.shields.io/badge/Language-SQL%20%2F%20MySQL-blue)
 ![Workbench](https://img.shields.io/badge/Tool-MySQL%20Workbench-orange)
@@ -6,12 +6,12 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This project presents a comprehensive relational database system designed for a Training Academy using **MySQL Workbench**. It covers end-to-end database implementation including schema design, DDL/DML operations, complex JOINs, aggregate functions, and attendance tracking analytics with business reporting queries[cite: 20].
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 | File Name | Description |
 | :--- | :--- |
@@ -23,7 +23,7 @@ This project presents a comprehensive relational database system designed for a 
 
 ---
 
-## 🛠️ Technical Notes & DML Operations
+## Technical Notes & DML Operations
 
 During data maintenance and transition from test records to official records in the `Attendance` table, bulk DML operations (`DELETE` and `INSERT`) were utilized.
 
